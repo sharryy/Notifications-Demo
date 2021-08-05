@@ -47,7 +47,10 @@ class InvoicePaid extends Notification
 
     public function toDatabase()
     {
-//        return
+        return [
+            'amount' => 1000,
+            'invoice_action' => 'Pay Now...'
+        ];
     }
 
     /**
